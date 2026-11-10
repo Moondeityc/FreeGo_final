@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Entre na sua conta FreeGo.">
+  <title>Entrar | FreeGo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-aside"><a class="auth-brand" href="index.html">FreeGo</a><div><h1>Seu próximo projeto começa aqui.</h1><p>Acesse sua conta para encontrar oportunidades, publicar projetos e acompanhar suas conexões profissionais.</p></div><small>Plataforma demonstrativa FreeGo</small></section>
+    <section class="auth-panel" aria-labelledby="login-title">
+      <h2 id="login-title">Bem-vindo de volta</h2><p>Entre com os dados da sua conta.</p>
+      <form class="auth-form" data-login-form>
+        <label for="email">E-mail<input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required></label>
+        <label for="password">Senha<input id="password" name="password" type="password" autocomplete="current-password" placeholder="Sua senha" required></label>
+        <div class="auth-message" data-auth-message role="status" aria-live="polite"></div>
+        <button class="auth-submit" type="submit">Entrar</button>
+      </form>
+      <p class="auth-links">Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a><br><br><a href="index.html">Voltar para a página inicial</a></p>
+    </section>
+  </main>
+  <div class="app-notice" data-notice hidden role="status"></div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

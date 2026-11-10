@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crie sua conta FreeGo como contratante ou freelancer.">
+  <title>Criar conta | FreeGo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-aside"><a class="auth-brand" href="index.html">FreeGo</a><div><h1>Crie conexões que viram trabalho.</h1><p>Faça parte da comunidade FreeGo como profissional freelancer ou como pessoa contratante.</p></div><small>Plataforma demonstrativa FreeGo</small></section>
+    <section class="auth-panel" aria-labelledby="signup-title">
+      <h2 id="signup-title">Criar sua conta</h2><p>Preencha seus dados para começar.</p>
+      <form class="auth-form" data-signup-form>
+        <label for="name">Nome completo<input id="name" name="name" type="text" autocomplete="name" placeholder="Ex.: Maria Santos" required minlength="2"></label>
+        <label for="email">E-mail<input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required></label>
+        <label for="role">Quero me cadastrar como<select id="role" name="role" required><option value="client">Contratante — publicar projetos</option><option value="freelancer">Freelancer — oferecer serviços</option></select></label>
+        <label for="password">Senha<input id="password" name="password" type="password" autocomplete="new-password" placeholder="Mínimo de 8 caracteres" required minlength="8"></label>
+        <label for="confirmation">Confirmar senha<input id="confirmation" name="confirmation" type="password" autocomplete="new-password" placeholder="Digite a senha novamente" required minlength="8"></label>
+        <div class="auth-message" data-auth-message role="status" aria-live="polite"></div>
+        <button class="auth-submit" type="submit">Criar conta</button>
+      </form>
+      <p class="auth-links">Já tem uma conta? <a href="login.html">Entrar</a><br><br><a href="index.html">Voltar para a página inicial</a></p>
+    </section>
+  </main>
+  <div class="app-notice" data-notice hidden role="status"></div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
